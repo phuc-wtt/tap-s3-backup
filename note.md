@@ -88,8 +88,7 @@ General setup then per-repo setup
 
 ### Code stand point:
 Current general usage of cdn link include 3 ways:
-#### Static url: has many patterns across file types, see more below
-These are patterns that used in listed file type:
+#### Static url: has many patterns across file types:
 - Json: When __ = https://s3
   + "key": "__"
 - Css: When __ = https://s3
@@ -115,11 +114,8 @@ These are patterns that used in listed file type:
   + "__
 html ?????
 
-#### SiteConfig/SConfig: could reside in both server or client code (src/config || src/server/config)
-Ex: ${CONFIG['region']['s3Prefix']}${CONFIG['region']['logoImage']} (community-web)
-    ${user.s3Base}tap-assets/glass-featured-prime-block.png (tap-basic)
-    {SiteConfig(this.props.user).site.s3Base + "tap-assets/adult/18plus.png"} (tap-content)
-
+#### SiteConfig/SConfig:
+Config (src/config || src/server/config) contain s3 domain string
 - community-web: src/config/index.js: s3ImgPath
 - tap-basic: src/server/config/country.js: s3Base
 - tap-community: src/server/config/country.js: s3Base
@@ -143,9 +139,16 @@ Ex: ${CONFIG['region']['s3Prefix']}${CONFIG['region']['logoImage']} (community-w
   + vip_cc_admin/src/server/config/country.js: s3Base
   src/app/components/Layout/Community/Footer/index.js: s3Prefix though cant be found in SiteConfig?
 - vip_cc_web: seems no usage
+- tap-component: seems no usage
 - vip_content_creator_backend: seems no usage
 
 Further per-repo inspection would needed for more detail.
+
+Usage example: 
++ ${CONFIG['region']['s3Prefix']}${CONFIG['region']['logoImage']} (community-web)
++ ${user.s3Base}tap-assets/glass-featured-prime-block.png (tap-basic)
++ {SiteConfig(this.props.user).site.s3Base + "tap-assets/adult/18plus.png"} (tap-content)
+
 
 #### URL builder Function: may use SiteConfig internaly
 Ex: getS3CDNPath("insufficient_balance_warning.png") (vip_backend)
