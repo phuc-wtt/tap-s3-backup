@@ -161,7 +161,7 @@ For old:
 - Static: 
   + non-js: search/replace old-static to new-static, using regex
   + js: import getImgCdn helper function, then search and replace old usage to in-place funtion call
-- SiteConfig/SConfig: use getImgCdn funtion without param
+- SiteConfig/SConfig: use getImgCdn funtion without param, rename properties contain 's3' to avoid confuse later on
 
 For new:
 Create a tap-component helper function:
