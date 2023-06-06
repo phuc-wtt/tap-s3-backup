@@ -157,11 +157,11 @@ Ex: getS3CDNPath("insufficient_balance_warning.png") (vip_backend)
 
 # Proposed
 For old:
+- URL buildder Function: convert it to general version and put to tap-component helper
 - Static: 
   + non-js: search/replace old-static to new-static, using regex
   + js: import getImgCdn helper function, then search and replace old usage to in-place funtion call
 - SiteConfig/SConfig: use getImgCdn funtion without param
-- URL buildder Function: convert it to general version and put to tap-component helper
 
 For new:
 Create a tap-component helper function:
