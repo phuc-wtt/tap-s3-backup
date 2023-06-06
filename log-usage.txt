@@ -1,0 +1,34 @@
+## JSON
+When __ = https://s3
+"key": "__
+
+## CSS
+When __ = https://s3
++ url(__
++ url('__
++ url("__
+
+
+## SCSS
+When __ = https://s3
++ url(__
++ url('__
++ url("__
++ $variable: '__
++ $variable: "__
+
+## JS
+When __ = https://s3
++ "__
++ " __
++ '__
++ `__
++ &quot;__
+
+When __ = //s3
++ '__
+
+When __ = url(https://s3
++ "__
+
+sed '/"https:\/\/s3/d' ./log-js.txt | sed "/'https:\/\/s3/d" | sed "/\`https:\/\/s3/d" | sed "/&quot;https:\/\/s3/d" | sed '/" https:\/\/s3/d' | sed "/'\/\/s3/d" | sed "/\"url(https:\/\/s3/d"

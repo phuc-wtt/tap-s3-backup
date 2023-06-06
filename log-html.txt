@@ -1,0 +1,16 @@
+grep -r 's3.theasianparent.com' --exclude=log\*.txt ./**/*.html >> log-html.txt
+
+./community-web/public/index.html:    <link rel='preconnect' href='//s3.theasianparent.com' />
+./community-web/public/index.html:    <link rel="shortcut icon" href="https://s3.theasianparent.com/tap-assets/favicon.ico">
+./community-web/public/index.html:    <link rel="apple-touch-icon" href="https://s3.theasianparent.com/parenttown-prod/assets/tap_c_logo_120x120.png">
+./community-web/public/index.html:    <link rel="apple-touch-icon" sizes="120x120" href="https://s3.theasianparent.com/parenttown-prod/assets/tap_c_logo_120x120.png">
+./community-web/public/index.html:    <link rel="apple-touch-icon" sizes="152x152" href="https://s3.theasianparent.com/parenttown-prod/assets/tap_c_logo_152x152.png">
+./community-web/server/templates/amp.html:                                <amp-img src="https://s3.theasianparent.com/community-theasianparent/assets/user.png" alt="login" height="18" width="18"></amp-img>
+./community-web/server/templates/amp.html:                                <amp-img src="https://s3.theasianparent.com/tap-assets/tap-logo/TAP+logo_white_text-27.png" height="29" width="150" alt="logo"></amp-img>
+./community-web/server/templates/amp.html:                                <amp-img src="https://s3.theasianparent.com/html-edm/2018/sep/tap-welcome/icon-android.svg" height="41" width="140" alt="google play store"></amp-img>
+./community-web/server/templates/amp.html:                                <amp-img src="https://s3.theasianparent.com/html-edm/2018/sep/tap-welcome/icon-ios.svg" height="41" width="140" alt="app store"></amp-img>
+./tap-iso/src/app/containers/ContributorPage/contributorPageTemplate.html:            <img class="community-login-img" src="https://s3.theasianparent.com/tap-assets/contributor-page/sign_up_contributor.png" alt="Sing up contributor image" loading="lazy" />
+./tap-iso/src/app/containers/ContributorPage/contributorPageTemplate.html:        <div class="contributor-banner-image"><img src="https://s3.theasianparent.com/tap-assets/contributor-page/contributor_banner.png" alt="contributor-page-banner" loading="lazy" height="224px" width="100%"></div>
+./tap-iso/src/app/containers/ContributorPage/contributorPageTemplate.html:                    <div class="topic-list-image"><img src="https://s3.theasianparent.com/tap-assets/contributor-page/topic_we_love_banner.png" alt="topic we love banner"></div>
+./tap-iso/src/app/containers/ContributorPage/contributorPageTemplate.html:                    <div class="topic-list-image faq-banner"><img src="https://s3.theasianparent.com/tap-assets/contributor-page/faq_banner.png" alt="faq banner"></div>
+./tap-iso/src/app/containers/ContributorPage/contributorPageTemplate.html:                <img class="community-login-img" src="https://s3.theasianparent.com/tap-assets/contributor-page/sign_up_contributor.png" alt="Sing up contributor image" loading="lazy" />
